@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install":"pnpm install --ignore-scripts",
+    "bootstrap": "pnpm install --ignore-scripts",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
@@ -12,10 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.9.9"
+    "vuepress": "1.9.9"
   },
   "dependencies": {
     "element-ui": "^2.15.13",
+    "rsk-common": "^3.0.4",
+    "vue-template-compiler": "2.6.11",
     "vuepress-plugin-demo-container": "^0.2.0"
   }
 }
