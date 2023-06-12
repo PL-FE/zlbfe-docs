@@ -1,0 +1,21 @@
+{
+  "name": "zlb-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install":"pnpm install --ignore-scripts",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.9.9"
+  },
+  "dependencies": {
+    "element-ui": "^2.15.13",
+    "vuepress-plugin-demo-container": "^0.2.0"
+  }
+}
