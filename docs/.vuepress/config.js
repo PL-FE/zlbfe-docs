@@ -1,3 +1,9 @@
+const path = require('path');
+ 
+function resolve (relatedPath) {
+  return path.join(__dirname, relatedPath);
+}
+const webpack = require('webpack');
 module.exports = {
   theme: "",
   title: "众乐邦前端",
@@ -27,12 +33,12 @@ module.exports = {
       },
       {
         title: 'rsk-common',
-        children: [ 
+        children: [
           {
             title: 'c',
             path: '/comps/rsk-common/color-picker.md'
           }
-         ],
+        ],
         initialOpenGroupIndex: -1 // 可选的, 默认值是 0
       },
       {
@@ -52,4 +58,31 @@ module.exports = {
   chainWebpack(config) {
     config.resolve.alias.set("core-js/library/fn", "core-js/features");
   },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        // vue: 'vue/dist/vue.js',
+        '@': resolve('./'),
+      },
+    },
+    plugins: [
+      new webpack.DefinePlugin({
+        CONFIG: JSON.stringify({}),
+      }),
+    ],
+    module: {
+      rules: [
+        {
+          test: /\.js$/, // 匹配JavaScript文件
+          exclude: /node_modules(?!.*rsk-common(?!.*node_modules))/,
+          use: {
+            loader: 'babel-loader', // 使用babel-loader处理
+            options: {
+              presets: ['@babel/preset-env'] // 使用预设配置，如@babel/preset-env
+            }
+          }
+        },
+      ]
+    },
+  }
 };
