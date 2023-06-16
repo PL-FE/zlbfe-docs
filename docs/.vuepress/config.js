@@ -1,9 +1,4 @@
-const path = require('path');
- 
-function resolve (relatedPath) {
-  return path.join(__dirname, relatedPath);
-}
-const webpack = require('webpack');
+const configureWebpack = require('./build/index')
 module.exports = {
   theme: "",
   title: "众乐邦前端",
@@ -35,8 +30,8 @@ module.exports = {
         title: 'rsk-common',
         children: [
           {
-            title: 'c',
-            path: '/comps/rsk-common/color-picker.md'
+            title: 'VButton',
+            path: '/comps/rsk-common/button.md'
           }
         ],
         initialOpenGroupIndex: -1 // 可选的, 默认值是 0
@@ -52,37 +47,14 @@ module.exports = {
       },
     ]
   },
-  head: [],
+  head: [
+    ['link', { rel: 'stylesheet', href: 'https://static.zlbzb.cn/common/assets/font_1574595_31u8s07swss/iconfont.css' }],
+    ['script', { src: 'https://static.zlbzb.cn/common/assets/font_1574595_31u8s07swss/iconfont.js' }],
+  ],
   plugins: ["demo-container"], // 配置插件
   markdown: {},
   chainWebpack(config) {
     config.resolve.alias.set("core-js/library/fn", "core-js/features");
   },
-  configureWebpack: {
-    resolve: {
-      alias: {
-        // vue: 'vue/dist/vue.js',
-        '@': resolve('./'),
-      },
-    },
-    plugins: [
-      new webpack.DefinePlugin({
-        CONFIG: JSON.stringify({}),
-      }),
-    ],
-    module: {
-      rules: [
-        {
-          test: /\.js$/, // 匹配JavaScript文件
-          exclude: /node_modules(?!.*rsk-common(?!.*node_modules))/,
-          use: {
-            loader: 'babel-loader', // 使用babel-loader处理
-            options: {
-              presets: ['@babel/preset-env'] // 使用预设配置，如@babel/preset-env
-            }
-          }
-        },
-      ]
-    },
-  }
+  configureWebpack
 };
