@@ -18,6 +18,10 @@
   >
     导出23232
   </v-button>
+  <v-button
+  class="search-button"
+  type="primary"
+  icon="v-icon v-icon-font v-icon-search"></v-button>
 ```
 :::
 

@@ -35,8 +35,8 @@ module.exports = {
         title: 'rsk-common',
         children: [
           {
-            title: 'c',
-            path: '/comps/rsk-common/color-picker.md'
+            title: 'VButton',
+            path: '/comps/rsk-common/button.md'
           }
         ],
         initialOpenGroupIndex: -1 // 可选的, 默认值是 0
@@ -52,7 +52,12 @@ module.exports = {
       },
     ]
   },
-  head: [],
+
+  head: [
+    ['link', { rel: 'stylesheet', href: 'https://unpkg.com/element-ui/lib/theme-chalk/index.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://static.zlbzb.cn/common/assets/font_1574595_31u8s07swss/iconfont.css' }],
+    ['script', { src: 'https://static.zlbzb.cn/common/assets/font_1574595_31u8s07swss/iconfont.js' }],
+  ],
   plugins: ["demo-container"], // 配置插件
   markdown: {},
   chainWebpack(config) {
