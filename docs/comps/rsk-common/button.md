@@ -5,100 +5,50 @@
 
 ### 基础用法
 
-:::demo 使用 v-model 与 Vue 实例中的一个变量进行双向绑定，绑定的变量需要是字符串类型。
+:::demo 用法与 el-button 类似
 ```html
   <v-button
     type="primary"
   >
-    导出23
+    按钮
   </v-button>
   <v-button
     type="primary"
     fill
   >
-    导出23232
+    按钮
   </v-button>
+```
+:::
+
+### 自带防抖
+
+:::demo 
+```html
   <v-button
-  class="search-button"
+    @click="handleClick"
+    type="primary">
+    按钮
+  </v-button>
+  <script>
+  export default {
+    methods:{
+      handleClick(){
+        this.$message.success('点击了')
+      }
+    }
+  };
+</script>
+```
+:::
+
+### 扩展 ICOn
+
+:::demo 
+```html
+  <v-button
   type="primary"
   icon="v-icon v-icon-font v-icon-search"></v-button>
-```
-:::
-
-### 选择透明度
-
-:::demo ColorPicker 支持普通颜色，也支持带 Alpha 通道的颜色，通过`show-alpha`属性即可控制是否支持透明度的选择。
-```html
-<el-color-picker v-model="color" show-alpha></el-color-picker>
-
-<script>
-  export default {
-    data() {
-      return {
-        color: 'rgba(19, 206, 102, 0.8)'
-      }
-    }
-  };
-</script>
-```
-:::
-
-### 预定义颜色
-
-:::demo ColorPicker 支持预定义颜色
-```html
-<el-color-picker
-  v-model="color"
-  show-alpha
-  :predefine="predefineColors">
-</el-color-picker>
-
-<script>
-  export default {
-    data() {
-      return {
-        color: 'rgba(255, 69, 0, 0.68)',
-        predefineColors: [
-          '#ff4500',
-          '#ff8c00',
-          '#ffd700',
-          '#90ee90',
-          '#00ced1',
-          '#1e90ff',
-          '#c71585',
-          'rgba(255, 69, 0, 0.68)',
-          'rgb(255, 120, 0)',
-          'hsv(51, 100, 98)',
-          'hsva(120, 40, 94, 0.5)',
-          'hsl(181, 100%, 37%)',
-          'hsla(209, 100%, 56%, 0.73)',
-          '#c7158577'
-        ]
-      }
-    }
-  };
-</script>
-```
-:::
-
-### 不同尺寸
-
-:::demo
-```html
-<el-color-picker v-model="color"></el-color-picker>
-<el-color-picker v-model="color" size="medium"></el-color-picker>
-<el-color-picker v-model="color" size="small"></el-color-picker>
-<el-color-picker v-model="color" size="mini"></el-color-picker>
-
-<script>
-  export default {
-    data() {
-      return {
-        color: '#409EFF'
-      }
-    }
-  };
-</script>
 ```
 :::
 

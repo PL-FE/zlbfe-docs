@@ -4,16 +4,16 @@ specifiers:
   babel-loader: ^8.2.3
   css-loader: ^5.2.7
   element-ui: ^2.13.2
-  file-loader: 6.2.0
+  file-loader: ^6.2.0
   less: ^3.8.1
   less-loader: ^7.3.0
   postcss-loader: ^4.3.0
   rsk-common: ^3.0.4
   style-loader: ^1.3.0
   url-loader: ^4.1.1
-  vue-loader: 15.9.8
+  vue-loader: ^15.9.8
   vue-server-renderer: 2.6.11
-  vue-style-loader: 4.1.3
+  vue-style-loader: ^4.1.3
   vue-template-compiler: 2.6.11
   vuepress: 1.5.4
   vuepress-plugin-demo-container: ^0.2.0
@@ -23,11 +23,8 @@ specifiers:
 
 dependencies:
   element-ui: registry.npmmirror.com/element-ui/2.15.13
-  file-loader: registry.npmmirror.com/file-loader/6.2.0
   rsk-common: 3.0.4
-  vue-loader: registry.npmmirror.com/vue-loader/15.9.8_fyz7nycr3pb7jbbxjbpsulhaeq
   vue-server-renderer: registry.npmmirror.com/vue-server-renderer/2.6.11
-  vue-style-loader: registry.npmmirror.com/vue-style-loader/4.1.3
   vue-template-compiler: registry.npmmirror.com/vue-template-compiler/2.6.11
   vuepress-plugin-demo-container: registry.npmmirror.com/vuepress-plugin-demo-container/0.2.0
   vuex: registry.npmmirror.com/vuex/3.6.2
@@ -37,11 +34,14 @@ dependencies:
 devDependencies:
   babel-loader: registry.npmmirror.com/babel-loader/8.3.0
   css-loader: registry.npmmirror.com/css-loader/5.2.7
+  file-loader: registry.npmmirror.com/file-loader/6.2.0
   less: registry.npmmirror.com/less/3.13.1
   less-loader: registry.npmmirror.com/less-loader/7.3.0_less@3.13.1
   postcss-loader: registry.npmmirror.com/postcss-loader/4.3.0
   style-loader: registry.npmmirror.com/style-loader/1.3.0
   url-loader: registry.npmmirror.com/url-loader/4.1.1_file-loader@6.2.0
+  vue-loader: registry.npmmirror.com/vue-loader/15.9.8_fyz7nycr3pb7jbbxjbpsulhaeq
+  vue-style-loader: registry.npmmirror.com/vue-style-loader/4.1.3
   vuepress: registry.npmmirror.com/vuepress/1.5.4
 
 packages:
@@ -1843,6 +1843,7 @@ packages:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.12.tgz}
     name: '@types/json-schema'
     version: 7.0.12
+    dev: true
 
   registry.npmmirror.com/@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/@types/keyv/-/keyv-3.1.4.tgz}
@@ -2149,6 +2150,7 @@ packages:
       - velocityjs
       - walrus
       - whiskers
+    dev: true
 
   registry.npmmirror.com/@vuepress/core/1.5.4:
     resolution: {integrity: sha512-RaHJiX0Yno4S3zoV64JNd3xE55sza8rayyWvXAJY381XVMxKrsLBrgW6ntNYSkzGnZcxi6fwMV/CVOUhEtkEkA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/@vuepress/core/-/core-1.5.4.tgz}
@@ -2618,6 +2620,7 @@ packages:
       ajv: ^6.9.1
     dependencies:
       ajv: registry.npmmirror.com/ajv/6.12.6
+    dev: true
 
   registry.npmmirror.com/ajv/6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/ajv/-/ajv-6.12.6.tgz}
@@ -2628,6 +2631,7 @@ packages:
       fast-json-stable-stringify: registry.npmmirror.com/fast-json-stable-stringify/2.1.0
       json-schema-traverse: registry.npmmirror.com/json-schema-traverse/0.4.1
       uri-js: registry.npmmirror.com/uri-js/4.4.1
+    dev: true
 
   registry.npmmirror.com/algoliasearch/3.35.1:
     resolution: {integrity: sha512-K4yKVhaHkXfJ/xcUnil04xiSrB8B8yHZoFEhWNpXg23eiCnqvTZw1tn/SqvdsANlYHLJlKl0qi3I/Q2Sqo7LwQ==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/algoliasearch/-/algoliasearch-3.35.1.tgz}
@@ -3165,6 +3169,7 @@ packages:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/big.js/-/big.js-5.2.2.tgz}
     name: big.js
     version: 5.2.2
+    dev: true
 
   registry.npmmirror.com/binary-extensions/1.13.1:
     resolution: {integrity: sha512-Un7MIEDdUC5gNpcGDV97op1Ywk748MpHcFTHoYs6qnj1Z3j7I53VG3nwZhKzoBZmbdRNnb6WRdFlwl7tSDuZGw==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/binary-extensions/-/binary-extensions-1.13.1.tgz}
@@ -3194,6 +3199,7 @@ packages:
     resolution: {integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/bluebird/-/bluebird-3.7.2.tgz}
     name: bluebird
     version: 3.7.2
+    dev: true
 
   registry.npmmirror.com/bn.js/4.12.0:
     resolution: {integrity: sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/bn.js/-/bn.js-4.12.0.tgz}
@@ -4235,6 +4241,7 @@ packages:
         optional: true
     dependencies:
       bluebird: registry.npmmirror.com/bluebird/3.7.2
+    dev: true
 
   registry.npmmirror.com/constants-browserify/1.0.0:
     resolution: {integrity: sha512-xFxOwqIzR/e1k1gLiWEophSCMqXcwVHIH7akf7b/vxcUeGunlj3hvZaaqxwHsTgn+IndtkQJgSztIDWeumWJDQ==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/constants-browserify/-/constants-browserify-1.0.0.tgz}
@@ -4539,6 +4546,7 @@ packages:
       postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
       schema-utils: registry.npmmirror.com/schema-utils/3.3.0
       semver: registry.npmmirror.com/semver/7.5.1
+    dev: true
 
   registry.npmmirror.com/css-parse/2.0.0:
     resolution: {integrity: sha512-UNIFik2RgSbiTwIW1IsFwXWn6vs+bYdq83LKTSOsx7NJR7WII9dxewkHLltfTLVppoUApHV0118a4RZRI9FLwA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/css-parse/-/css-parse-2.0.0.tgz}
@@ -4628,6 +4636,7 @@ packages:
     version: 3.0.0
     engines: {node: '>=4'}
     hasBin: true
+    dev: true
 
   registry.npmmirror.com/cssnano-preset-default/4.0.8:
     resolution: {integrity: sha512-LdAyHuq+VRyeVREFmuxUZR1TXjQm8QQU/ktoo/x7bz+SdOge1YKc5eMN6pRW7YWBmyq59CqYba1dJ5cUukEjLQ==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/cssnano-preset-default/-/cssnano-preset-default-4.0.8.tgz}
@@ -5290,6 +5299,7 @@ packages:
     name: emojis-list
     version: 3.0.0
     engines: {node: '>= 4'}
+    dev: true
 
   registry.npmmirror.com/encode-utf8/1.0.3:
     resolution: {integrity: sha512-ucAnuBEhUK4boH2HjVYG5Q2mQyPorvv0u/ocS+zhdw0S8AlHYY+GOFhP1Gio5z4icpP2ivFSvhtFjQi8+T9ppw==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/encode-utf8/-/encode-utf8-1.0.3.tgz}
@@ -5798,6 +5808,7 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz}
     name: fast-deep-equal
     version: 3.1.3
+    dev: true
 
   registry.npmmirror.com/fast-glob/2.2.7:
     resolution: {integrity: sha512-g1KuQwHOZAmOZMuBtHdxDtju+T2RT8jgCC9aANsbpdiDDTSnjgfuVsIBNKbUeJI3oKMRExcfNDtJl4OhbffMsw==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/fast-glob/-/fast-glob-2.2.7.tgz}
@@ -5819,6 +5830,7 @@ packages:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz}
     name: fast-json-stable-stringify
     version: 2.1.0
+    dev: true
 
   registry.npmmirror.com/faye-websocket/0.11.4:
     resolution: {integrity: sha512-CzbClwlXAuiRQAlUyfqPgvPoNKTckTPGfwZV4ZdAhVcP2lh9KUxJg2b5GkE7XbjKQ3YJnQ9z6D9ntLAlB+tP8g==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/faye-websocket/-/faye-websocket-0.11.4.tgz}
@@ -5873,6 +5885,7 @@ packages:
     dependencies:
       loader-utils: registry.npmmirror.com/loader-utils/2.0.4
       schema-utils: registry.npmmirror.com/schema-utils/3.3.0
+    dev: true
 
   registry.npmmirror.com/file-saver/2.0.5:
     resolution: {integrity: sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/file-saver/-/file-saver-2.0.5.tgz}
@@ -6783,6 +6796,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       postcss: registry.npmmirror.com/postcss/8.4.24
+    dev: true
 
   registry.npmmirror.com/ieee754/1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/ieee754/-/ieee754-1.2.1.tgz}
@@ -7560,6 +7574,7 @@ packages:
     resolution: {integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz}
     name: json-schema-traverse
     version: 0.4.1
+    dev: true
 
   registry.npmmirror.com/json-schema/0.4.0:
     resolution: {integrity: sha512-es94M3nTIfsEPisRafak+HDLfHXnKBhV3vU5eqPcS3flIWqcxJWgXHXiey3YrpaNsanY5ei1VoYEbOzijuq9BA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/json-schema/-/json-schema-0.4.0.tgz}
@@ -7593,6 +7608,7 @@ packages:
     hasBin: true
     dependencies:
       minimist: registry.npmmirror.com/minimist/1.2.8
+    dev: true
 
   registry.npmmirror.com/json5/2.2.3:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/json5/-/json5-2.2.3.tgz}
@@ -7600,6 +7616,7 @@ packages:
     version: 2.2.3
     engines: {node: '>=6'}
     hasBin: true
+    dev: true
 
   registry.npmmirror.com/jsonfile/4.0.0:
     resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/jsonfile/-/jsonfile-4.0.0.tgz}
@@ -7780,6 +7797,7 @@ packages:
       big.js: registry.npmmirror.com/big.js/5.2.2
       emojis-list: registry.npmmirror.com/emojis-list/3.0.0
       json5: registry.npmmirror.com/json5/1.0.2
+    dev: true
 
   registry.npmmirror.com/loader-utils/2.0.4:
     resolution: {integrity: sha512-xXqpXoINfFhgua9xiqD8fPFHgkoq1mmmpE92WlDbm9rNRd/EbRb+Gqf908T2DMfuHjjJlksiK2RbHVOdD/MqSw==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/loader-utils/-/loader-utils-2.0.4.tgz}
@@ -7790,6 +7808,7 @@ packages:
       big.js: registry.npmmirror.com/big.js/5.2.2
       emojis-list: registry.npmmirror.com/emojis-list/3.0.0
       json5: registry.npmmirror.com/json5/2.2.3
+    dev: true
 
   registry.npmmirror.com/locate-path/3.0.0:
     resolution: {integrity: sha512-7AO748wWnIhNqAuaty2ZWHkQHRSNfPVIsPIfwEOWO22AmaoVrWavlOcMR5nzTLNYvp36X220/maaRsrec1G65A==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/locate-path/-/locate-path-3.0.0.tgz}
@@ -7903,6 +7922,7 @@ packages:
     dependencies:
       pseudomap: registry.npmmirror.com/pseudomap/1.0.2
       yallist: registry.npmmirror.com/yallist/2.1.2
+    dev: true
 
   registry.npmmirror.com/lru-cache/5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/lru-cache/-/lru-cache-5.1.1.tgz}
@@ -7919,6 +7939,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: registry.npmmirror.com/yallist/4.0.0
+    dev: true
 
   registry.npmmirror.com/make-dir/2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/make-dir/-/make-dir-2.1.0.tgz}
@@ -8087,6 +8108,7 @@ packages:
     version: 1.1.0
     dependencies:
       source-map: registry.npmmirror.com/source-map/0.6.1
+    dev: true
 
   registry.npmmirror.com/merge2/1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/merge2/-/merge2-1.4.1.tgz}
@@ -8246,6 +8268,7 @@ packages:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/minimist/-/minimist-1.2.8.tgz}
     name: minimist
     version: 1.2.8
+    dev: true
 
   registry.npmmirror.com/mississippi/3.0.0:
     resolution: {integrity: sha512-x471SsVjUtBRtcvd4BzKE9kFC+/2TeWgKCgw0bZcw1b9l2X3QX5vCWgF+KaZaYm87Ss//rHnWryupDrgLvmSkA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/mississippi/-/mississippi-3.0.0.tgz}
@@ -8356,6 +8379,7 @@ packages:
     version: 3.3.6
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+    dev: true
 
   registry.npmmirror.com/nanomatch/1.2.13:
     resolution: {integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/nanomatch/-/nanomatch-1.2.13.tgz}
@@ -9033,11 +9057,13 @@ packages:
     resolution: {integrity: sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/picocolors/-/picocolors-0.2.1.tgz}
     name: picocolors
     version: 0.2.1
+    dev: true
 
   registry.npmmirror.com/picocolors/1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/picocolors/-/picocolors-1.0.0.tgz}
     name: picocolors
     version: 1.0.0
+    dev: true
 
   registry.npmmirror.com/picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/picomatch/-/picomatch-2.3.1.tgz}
@@ -9343,6 +9369,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       postcss: registry.npmmirror.com/postcss/8.4.24
+    dev: true
 
   registry.npmmirror.com/postcss-modules-local-by-default/2.0.6:
     resolution: {integrity: sha512-oLUV5YNkeIBa0yQl7EYnxMgy4N6noxmiwZStaEJUSe2xPMcdNc8WmBQuQCx18H5psYbVxz8zoHk0RAAYZXP9gA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/postcss-modules-local-by-default/-/postcss-modules-local-by-default-2.0.6.tgz}
@@ -9368,6 +9395,7 @@ packages:
       postcss: registry.npmmirror.com/postcss/8.4.24
       postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.13
       postcss-value-parser: registry.npmmirror.com/postcss-value-parser/4.2.0
+    dev: true
 
   registry.npmmirror.com/postcss-modules-scope/2.2.0:
     resolution: {integrity: sha512-YyEgsTMRpNd+HmyC7H/mh3y+MeFWevy7V1evVhJWewmMbjDHIbZbOXICC2y+m1xI1UVfIT1HMW/O04Hxyu9oXQ==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/postcss-modules-scope/-/postcss-modules-scope-2.2.0.tgz}
@@ -9390,6 +9418,7 @@ packages:
     dependencies:
       postcss: registry.npmmirror.com/postcss/8.4.24
       postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.13
+    dev: true
 
   registry.npmmirror.com/postcss-modules-values/2.0.0:
     resolution: {integrity: sha512-Ki7JZa7ff1N3EIMlPnGTZfUMe69FFwiQPnVSXC9mnn3jozCRBYIxiZd44yJOV2AmabOo4qFf8s0dC/+lweG7+w==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/postcss-modules-values/-/postcss-modules-values-2.0.0.tgz}
@@ -9411,6 +9440,7 @@ packages:
     dependencies:
       icss-utils: registry.npmmirror.com/icss-utils/5.1.0_postcss@8.4.24
       postcss: registry.npmmirror.com/postcss/8.4.24
+    dev: true
 
   registry.npmmirror.com/postcss-normalize-charset/4.0.1:
     resolution: {integrity: sha512-gMXCrrlWh6G27U0hF3vNvR3w8I1s2wOBILvA87iNXaPvSNo5uZAMYsZG7XjCUf1eVxuPfyL4TJ7++SGZLc9A3g==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/postcss-normalize-charset/-/postcss-normalize-charset-4.0.1.tgz}
@@ -9574,6 +9604,7 @@ packages:
     dependencies:
       cssesc: registry.npmmirror.com/cssesc/3.0.0
       util-deprecate: registry.npmmirror.com/util-deprecate/1.0.2
+    dev: true
 
   registry.npmmirror.com/postcss-svgo/4.0.3:
     resolution: {integrity: sha512-NoRbrcMWTtUghzuKSoIm6XV+sJdvZ7GZSc3wdBN0W19FTtp2ko8NqLsgoh/m9CzNhU3KLPvQmjIwtaNFkaFTvw==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/postcss-svgo/-/postcss-svgo-4.0.3.tgz}
@@ -9607,6 +9638,7 @@ packages:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz}
     name: postcss-value-parser
     version: 4.2.0
+    dev: true
 
   registry.npmmirror.com/postcss/7.0.39:
     resolution: {integrity: sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/postcss/-/postcss-7.0.39.tgz}
@@ -9616,6 +9648,7 @@ packages:
     dependencies:
       picocolors: registry.npmmirror.com/picocolors/0.2.1
       source-map: registry.npmmirror.com/source-map/0.6.1
+    dev: true
 
   registry.npmmirror.com/postcss/8.4.24:
     resolution: {integrity: sha512-M0RzbcI0sO/XJNucsGjvWU9ERWxb/ytp1w6dKtxTKgixdtQDq4rmx/g8W1hnaheq9jgwL/oyEdH5Bc4WwJKMqg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/postcss/-/postcss-8.4.24.tgz}
@@ -9626,6 +9659,7 @@ packages:
       nanoid: registry.npmmirror.com/nanoid/3.3.6
       picocolors: registry.npmmirror.com/picocolors/1.0.0
       source-map-js: registry.npmmirror.com/source-map-js/1.0.2
+    dev: true
 
   registry.npmmirror.com/prepend-http/2.0.0:
     resolution: {integrity: sha512-ravE6m9Atw9Z/jjttRUZ+clIXogdghyZAuWJ3qEzjT+jI/dL1ifAqhZeC5VHzQp1MSt1+jxKkFNemj/iO7tVUA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/prepend-http/-/prepend-http-2.0.0.tgz}
@@ -9641,6 +9675,7 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
     requiresBuild: true
+    dev: true
     optional: true
 
   registry.npmmirror.com/pretty-error/2.1.2:
@@ -9727,6 +9762,7 @@ packages:
     resolution: {integrity: sha512-b/YwNhb8lk1Zz2+bXXpS/LK9OisiZZ1SNsSLxN1x2OXVEhW2Ckr/7mWE5vrC1ZTiJlD9g19jWszTmJsB+oEpFQ==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/pseudomap/-/pseudomap-1.0.2.tgz}
     name: pseudomap
     version: 1.0.2
+    dev: true
 
   registry.npmmirror.com/psl/1.9.0:
     resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/psl/-/psl-1.9.0.tgz}
@@ -9786,6 +9822,7 @@ packages:
     name: punycode
     version: 2.3.0
     engines: {node: '>=6'}
+    dev: true
 
   registry.npmmirror.com/pupa/2.1.1:
     resolution: {integrity: sha512-l1jNAspIBSFqbT+y+5FosojNpVpF94nlI+wDUpqP9enwOTfHx9f0gh5nB96vl+6yTpsJsypeNrwfzPrKuHB41A==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/pupa/-/pupa-2.1.1.tgz}
@@ -10350,6 +10387,7 @@ packages:
       '@types/json-schema': registry.npmmirror.com/@types/json-schema/7.0.12
       ajv: registry.npmmirror.com/ajv/6.12.6
       ajv-keywords: registry.npmmirror.com/ajv-keywords/3.5.2_ajv@6.12.6
+    dev: true
 
   registry.npmmirror.com/section-matter/1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/section-matter/-/section-matter-1.0.0.tgz}
@@ -10412,6 +10450,7 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: registry.npmmirror.com/lru-cache/6.0.0
+    dev: true
 
   registry.npmmirror.com/send/0.18.0_supports-color@6.1.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/send/-/send-0.18.0.tgz}
@@ -10729,6 +10768,7 @@ packages:
     name: source-map-js
     version: 1.0.2
     engines: {node: '>=0.10.0'}
+    dev: true
 
   registry.npmmirror.com/source-map-resolve/0.5.3:
     resolution: {integrity: sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/source-map-resolve/-/source-map-resolve-0.5.3.tgz}
@@ -10775,6 +10815,7 @@ packages:
     name: source-map
     version: 0.6.1
     engines: {node: '>=0.10.0'}
+    dev: true
 
   registry.npmmirror.com/source-map/0.7.4:
     resolution: {integrity: sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/source-map/-/source-map-0.7.4.tgz}
@@ -11693,6 +11734,7 @@ packages:
     version: 4.4.1
     dependencies:
       punycode: registry.npmmirror.com/punycode/2.3.0
+    dev: true
 
   registry.npmmirror.com/urix/0.1.0:
     resolution: {integrity: sha512-Am1ousAhSLBeB9cG/7k7r2R0zj50uDRlZHPGbazid5s9rlF1F/QKYObEKSIunSjIOkJZqwRRLpvewjEkM7pSqg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/urix/-/urix-0.1.0.tgz}
@@ -11782,6 +11824,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/util-deprecate/-/util-deprecate-1.0.2.tgz}
     name: util-deprecate
     version: 1.0.2
+    dev: true
 
   registry.npmmirror.com/util.promisify/1.0.0:
     resolution: {integrity: sha512-i+6qA2MPhvoKLuxnJNpXAGhg7HphQOSUq2LKMZD0m15EiskXUkMvKdF4Uui0WYeCUGea+o2cw/ZuwehtfsrNkA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/util.promisify/-/util.promisify-1.0.0.tgz}
@@ -11893,6 +11936,7 @@ packages:
     resolution: {integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz}
     name: vue-hot-reload-api
     version: 2.3.4
+    dev: true
 
   registry.npmmirror.com/vue-loader/15.9.8_fyz7nycr3pb7jbbxjbpsulhaeq:
     resolution: {integrity: sha512-GwSkxPrihfLR69/dSV3+5CdMQ0D+jXg8Ma1S4nQXKJAznYFX14vHdc/NetQc34Dw+rBbIJyP7JOuVb9Fhprvog==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/vue-loader/-/vue-loader-15.9.8.tgz}
@@ -11974,7 +12018,7 @@ packages:
       - velocityjs
       - walrus
       - whiskers
-    dev: false
+    dev: true
 
   registry.npmmirror.com/vue-loader/15.9.8_zxzpuc6z4n5ku55kvw7iyem7py:
     resolution: {integrity: sha512-GwSkxPrihfLR69/dSV3+5CdMQ0D+jXg8Ma1S4nQXKJAznYFX14vHdc/NetQc34Dw+rBbIJyP7JOuVb9Fhprvog==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/vue-loader/-/vue-loader-15.9.8.tgz}
@@ -12092,6 +12136,7 @@ packages:
     dependencies:
       hash-sum: registry.npmmirror.com/hash-sum/1.0.2
       loader-utils: registry.npmmirror.com/loader-utils/1.4.2
+    dev: true
 
   registry.npmmirror.com/vue-template-compiler/2.6.11:
     resolution: {integrity: sha512-KIq15bvQDrcCjpGjrAhx4mUlyyHfdmTaoNfeoATHLAiWB+MU3cx4lOzMwrnUh9cCxy0Lt1T11hAFY6TQgroUAA==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/vue-template-compiler/-/vue-template-compiler-2.6.11.tgz}
@@ -12105,6 +12150,7 @@ packages:
     resolution: {integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz}
     name: vue-template-es2015-compiler
     version: 1.9.1
+    dev: true
 
   registry.npmmirror.com/vue/2.6.11:
     resolution: {integrity: sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/vue/-/vue-2.6.11.tgz}
@@ -12725,6 +12771,7 @@ packages:
     resolution: {integrity: sha512-ncTzHV7NvsQZkYe1DW7cbDLm0YpzHmZF5r/iyP3ZnQtMiJ+pjzisCiMNI+Sj+xQF5pXhSHxSB3uDbsBTzY/c2A==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/yallist/-/yallist-2.1.2.tgz}
     name: yallist
     version: 2.1.2
+    dev: true
 
   registry.npmmirror.com/yallist/3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/yallist/-/yallist-3.1.1.tgz}
@@ -12736,6 +12783,7 @@ packages:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/yallist/-/yallist-4.0.0.tgz}
     name: yallist
     version: 4.0.0
+    dev: true
 
   registry.npmmirror.com/yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==, registry: https://packages.aliyun.com/625d1a9ea60d8a4bbe1739ce/npm/npm-registry/, tarball: https://registry.npmmirror.com/yaml/-/yaml-1.10.2.tgz}
