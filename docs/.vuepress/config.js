@@ -1,9 +1,4 @@
-const path = require('path');
- 
-function resolve (relatedPath) {
-  return path.join(__dirname, relatedPath);
-}
-const webpack = require('webpack');
+const configureWebpack = require('./build/index')
 module.exports = {
   theme: "",
   title: "众乐邦前端",
