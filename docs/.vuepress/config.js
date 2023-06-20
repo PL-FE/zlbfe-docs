@@ -1,6 +1,6 @@
 const path = require('path');
 
-function resolve(relatedPath) {
+function resolve (relatedPath) {
   return path.join(__dirname, relatedPath);
 }
 module.exports = {
@@ -67,7 +67,7 @@ module.exports = {
   ],
   plugins: ["demo-container"], // 配置插件
   markdown: {},
-  chainWebpack(config) {
+  chainWebpack (config) {
     config.resolve.alias.set("core-js/library/fn", "core-js/features");
   },
   configureWebpack: {

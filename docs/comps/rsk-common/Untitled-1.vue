@@ -1,47 +1,35 @@
 <template>
-  <v-add-table
-    :min="0"
-    :buttons="['delete', 'add']"
-    :table-list.sync="tableList"
-    :columns="columns"
-  >
-    <template slot="taxCode" slot-scope="{ data: { index } }">
-      <v-select
-        v-model="tableList[index].taxCode"
-        :options="[]"
-        :clearable="false"
+  <v-add-table :table-list.sync="tableList"
+    :columns="columns">
+    <template slot="taxCode"
+      slot-scope="{ data: { index } }">
+      <v-select placeholder="请选择税种"
+        v-model="form.rewards[index].taxCode"
         size="mini"
-        :disabled="disabled"
-        @change="(val) => taxpayerTypeChange(val, index)"
-      ></v-select>
+        options="options" />
     </template>
   </v-add-table>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
+      form: {
+        rewards: []
+      },
       tableList: [],
       columns: [
-        { label: "税种", key: "taxCode", width: 237 },
+        { label: "税种", key: "taxCode" },
         { label: "奖励比例", key: "ratio" },
       ],
       options: [
-        {
-          label: "1",
-          value: 1,
-        },
-        {
-          label: "2",
-          value: 2,
-        },
+        { value: "1", label: "南部大区" },
+        { value: "2", label: "其他" },
       ],
     };
   },
-  mounted() {},
+  mounted () { },
   methods: {},
 };
 </script>
-
-<style lang="less" scoped></style>
