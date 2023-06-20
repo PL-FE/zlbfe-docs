@@ -1,4 +1,4 @@
-## VButton 按钮
+## VButton
 
 - 对 Element-ui 的按钮做了样式修改
 - 内部做了防抖节流

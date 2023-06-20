@@ -35,15 +35,15 @@ module.exports = {
         title: 'rsk-common',
         children: [
           {
-            title: '按钮 v-button',
+            title: 'v-button 按钮',
             path: '/comps/rsk-common/button.md'
           },
           {
-            title: '表格增加行 v-add-table',
+            title: 'v-add-table 表格增加行',
             path: '/comps/rsk-common/add-table.md'
           },
           {
-            title: '下拉选择 v-select',
+            title: 'v-select 下拉选择',
             path: '/comps/rsk-common/select.md'
           }
         ],
