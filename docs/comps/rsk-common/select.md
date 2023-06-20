@@ -1,6 +1,6 @@
 ## VSelect
 
-表格中新增添加行的场景使用
+- 对 Element-ui 的下拉框进行了二次封装
 
 ### 基础用法
 
@@ -113,4 +113,12 @@
 | validAlways    | 是否在每次改变 options 验证值                                                            | Boolean         | -      | false  |
 | chooseAll      | 选择全部 ,multiple 需要为 true                                                           | Boolean         | -      | false  |
 
-其他继承自 `el-button`
+其他继承自 `el-select`
+
+## 事件
+
+| 事件名称     | 说明              | 回调参数                                      |
+| ------------ | ----------------- | --------------------------------------------- |
+| changeOption | select 选择改变时 | value, option, { preValue }, preValue: 旧的值 |
+
+其他继承自 `el-select`
