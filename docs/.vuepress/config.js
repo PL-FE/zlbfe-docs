@@ -45,6 +45,10 @@ module.exports = {
           {
             title: 'v-select 下拉选择',
             path: '/comps/rsk-common/select.md'
+          },
+          {
+            title: 'v-empty 缺省图片',
+            path: '/comps/rsk-common/empty.md'
           }
         ],
         initialOpenGroupIndex: -1 // 可选的, 默认值是 0
