@@ -49,6 +49,10 @@ module.exports = {
           {
             title: 'v-empty 暂无数据',
             path: '/comps/rsk-common/empty.md'
+          },
+          {
+            title: 'v-search 搜素',
+            path: '/comps/rsk-common/search.md'
           }
         ],
         initialOpenGroupIndex: -1 // 可选的, 默认值是 0
@@ -80,6 +84,7 @@ module.exports = {
       alias: {
         // vue: 'vue/dist/vue.js',
         '@': resolve('./'),
+        '@common': 'rsk-common',
       },
     },
     module: {
