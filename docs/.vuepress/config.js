@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 
 function resolve(relatedPath) {
@@ -37,6 +36,14 @@ module.exports = {
           {
             title: 'VButton',
             path: '/comps/rsk-common/button.md'
+          },
+          {
+            title: 'AddTable',
+            path: '/comps/rsk-common/add-table.md'
+          },
+          {
+            title: 'Select',
+            path: '/comps/rsk-common/select.md'
           }
         ],
         initialOpenGroupIndex: -1 // 可选的, 默认值是 0
@@ -70,11 +77,6 @@ module.exports = {
         '@': resolve('./'),
       },
     },
-    plugins: [
-      new webpack.DefinePlugin({
-        CONFIG: JSON.stringify({}),
-      }),
-    ],
     module: {
       rules: [
         {

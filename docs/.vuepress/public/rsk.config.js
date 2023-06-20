@@ -77,3 +77,5 @@ window.RSK_CONFIG = {
 };
 
 window.CONFIG = {}
+
+window.global = window;
