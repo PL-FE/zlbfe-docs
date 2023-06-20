@@ -47,7 +47,7 @@ module.exports = {
             path: '/comps/rsk-common/select.md'
           },
           {
-            title: 'v-empty 缺省图片',
+            title: 'v-empty 暂无数据',
             path: '/comps/rsk-common/empty.md'
           }
         ],
