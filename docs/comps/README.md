@@ -1,23 +1,8 @@
-# 安装
+# 说明
 
-## npm安装
+`财税系统、众乐邦 MS 系统` ，使用到了 `rsk-commom`包组件
 
-推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
-
-
-```js
-npm i element-ui -S
-```
-
-
-## CDN
-目前可以通过 unpkg.com/element-ui 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。
-
-```js
-
-<!-- 引入样式 -->
-<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-<!-- 引入组件库 -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
-
-```
+::: warning
+部分组件使用到接口，需要先手动登录 test 环境系统获取到 token，才可以正常进行请求。
+[https://sso.test.zlbzb.cn/](https://sso.test.zlbzb.cn/)
+:::

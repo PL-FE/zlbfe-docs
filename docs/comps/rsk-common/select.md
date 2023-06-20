@@ -57,8 +57,9 @@
 ```
 
 :::
-::: tip
-需要先手动登录 test 环境系统获取到 token，才可以正常进行请求
+::: warning
+部分组件使用到接口，需要先手动登录 test 环境系统获取到 token，才可以正常进行请求。
+[https://sso.test.zlbzb.cn/](https://sso.test.zlbzb.cn/)
 :::
 
 ### 其他功能
