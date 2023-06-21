@@ -53,6 +53,10 @@ module.exports = {
           {
             title: 'v-search 搜素',
             path: '/comps/rsk-common/search.md'
+          },
+          {
+            title: 'v-icon 图标',
+            path: '/comps/rsk-common/icon.md'
           }
         ],
         initialOpenGroupIndex: -1 // 可选的, 默认值是 0

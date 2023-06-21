@@ -7,7 +7,7 @@ const VEmpty = () => import('rsk-common/components/empty');
 // const VLayout = () => import('rsk-common/components/layout');
 // const VLayoutFullPage = () => import('rsk-common/components/layout-full-page');
 const VSearch = () => import('rsk-common/components/search');
-// const VIcon = () => import('rsk-common/components/icon');
+const VIcon = () => import('rsk-common/components/icon');
 // const VDialog = () => import('rsk-common/components/dialog');
 // const VPage = () => import('rsk-common/components/page');
 // const VForm = () => import('rsk-common/components/form');
@@ -59,5 +59,6 @@ export const components = {
   VNativeBaseTable,
   VSelect,
   VEmpty,
-  VSearch
+  VSearch,
+  VIcon
 };
